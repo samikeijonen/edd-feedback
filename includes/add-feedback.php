@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<?php wp_editor( '', 'message', array( 'textarea_name' => 'message' ) ); ?>
 					<p class="description"><?php _e( 'The email message to be sent with the feedback. The following template tags can be used in the message:', 'edd-feedback' ); ?></p>
 					<ul>
-						<li>{name} <?php _e( 'The customer\'s name', 'edd-feedback' ); ?></li>
+						<li>{downloads} <?php _e( 'The download list', 'edd-feedback' ); ?></li>
 					</ul>
 				</td>
 			</tr>
