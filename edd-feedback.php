@@ -22,7 +22,6 @@
  * @license         http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-
 // Exit if accessed directly
 if( !defined( 'ABSPATH' ) ) {
 	exit;
@@ -101,7 +100,7 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 			
 			// Include files and scripts
 			if ( is_admin() ) {
-				//require_once EDD_FEEDBACK_DIR . 'includes/meta-boxes.php';
+				require_once EDD_FEEDBACK_DIR . 'includes/meta-boxes.php';
 				require_once EDD_FEEDBACK_DIR . 'includes/settings.php';
 			}
 			
