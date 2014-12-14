@@ -5,37 +5,37 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
+"PO-Revision-Date: 2014-11-26 22:40+0200\n"
+"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
+"Language-Team:  <sami.keijonen@foxnet.fi>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-11-23 11:55+0200\n"
-"Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
-"Language-Team:  <sami.keijonen@foxnet.fi>\n"
 "X-Generator: Poedit 1.6.10\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: fi\n"
 
-#: edd-feedback.php:161
+#: edd-feedback.php:160
 msgid "EDD Feedback Settings"
 msgstr "EDD palaute -lisäosan asetukset"
 
-#: edd-feedback.php:162
+#: edd-feedback.php:161
 msgid "Configure EDD Feedback Settings"
 msgstr "Määritä EDD palaute -lisäosan asetukset"
 
-#: edd-feedback.php:167
+#: edd-feedback.php:166 includes/meta-boxes.php:23
 msgid "Disable Feedback Emails"
 msgstr "Älä lähetä palautesähköpostia"
 
-#: edd-feedback.php:168
+#: edd-feedback.php:167
 msgid "Check this box if you do not want to send feedback emails."
-msgstr ""
+msgstr "Valitse tämä, jos et halua lähettää palautesähköpostia."
+
+#: edd-feedback.php:172
+msgid "Feedbacks"
+msgstr "Palautteet"
 
 #: edd-feedback.php:173
-msgid "Feedbacks"
-msgstr ""
-
-#: edd-feedback.php:174
 msgid "Configure the feedback notice emails."
 msgstr "Hallitse palautesähköpostia."
 
@@ -45,20 +45,39 @@ msgid ""
 "\n"
 "We would love to hear feedback from you.\n"
 "\n"
-"You have purchased following products from us: {edd_feedback_downloads}\n"
+"You have purchased following products from us:\n"
+"\n"
+"{download_list}\n"
 "\n"
 "Are you happy with your purchase? Is there anything we can do for you?"
 msgstr ""
+"Hei {name},\n"
+"\n"
+"Haluaisimme kuulla palautetta.\n"
+"\n"
+"Olette ostaneet meiltä seuraavat tuotteet:\n"
+"\n"
+"{download_list}\n"
+"\n"
+"Oletko tyytyväinen ostokseesi? Voimmeko auttaa jossakin asiassa?"
 
 #: includes/EDD_Feedback_Emails.php:46 includes/feedbacks.php:69
-#: includes/feedbacks.php:111 includes/settings.php:96
+#: includes/feedbacks.php:114 includes/settings.php:96
 #: includes/settings.php:150
 msgid "Love to hear feedback"
-msgstr ""
+msgstr "Haluaisimme kuulla palautetta"
 
 #: includes/EDD_Feedback_Emails.php:54 includes/settings.php:223
 msgid "Feedback"
-msgstr ""
+msgstr "Palaute"
+
+#: includes/EDD_Feedback_Emails.php:96
+msgid "Quantity"
+msgstr "Määrä"
+
+#: includes/EDD_Feedback_Emails.php:101
+msgid "SKU"
+msgstr "SKU"
 
 #: includes/add-feedback.php:21 includes/add-feedback.php:65
 #: includes/settings.php:49
@@ -153,54 +172,10 @@ msgstr "Kaksi kuukautta oston jälkeen"
 msgid "Three months after purchase"
 msgstr "Kolme kuukautta oston jälkeen"
 
-#: includes/meta-boxes.php:28
-msgid "Set as private"
-msgstr "Merkitse yksityiseksi"
-
-#: includes/meta-boxes.php:58
-#, fuzzy
-msgid "All content have been marked as private in global %ssettings%s page."
-msgstr "Kaikki sisältö on merkitty yksityiseksi %sasetukset%s-sivulla."
-
-#: includes/meta-boxes.php:63
-#, fuzzy
-msgid "Check this content as private."
-msgstr "Merkitse tämä sisältö yksityikseksi."
-
-#: includes/meta-boxes.php:90
-#, fuzzy
-msgid "Check to enable membership length creation"
-msgstr "Valitse tämä, jos haluat ottaa jäsenyyden keston käyttöön"
-
-#: includes/meta-boxes.php:97 includes/meta-boxes.php:157
-#, fuzzy
-msgid "Days"
-msgstr "Päivää"
-
-#: includes/meta-boxes.php:98 includes/meta-boxes.php:158
-#, fuzzy
-msgid "Weeks"
-msgstr "Viikkoa"
-
-#: includes/meta-boxes.php:99 includes/meta-boxes.php:159
-#, fuzzy
-msgid "Months"
-msgstr "Kuukautta"
-
-#: includes/meta-boxes.php:100 includes/meta-boxes.php:160
-#, fuzzy
-msgid "Years"
-msgstr "Vuotta"
-
-#: includes/meta-boxes.php:102
-#, fuzzy
-msgid "How long are membership valid for?"
-msgstr "Kuinka kauan jäsenyys on voimassa?"
-
-#: includes/meta-boxes.php:127
-#, fuzzy
-msgid "Membership length"
-msgstr "Jäsenyyden kesto"
+#: includes/meta-boxes.php:48
+msgid "Check this if you want to disable feedback emails for this item."
+msgstr ""
+"Valitse tämä, jos et halua lähettää palautesähköpostia tälle tuotteelle. "
 
 #: includes/settings.php:30
 msgid "Subject"
@@ -223,9 +198,8 @@ msgid "Delete"
 msgstr "Poista"
 
 #: includes/settings.php:89
-#, fuzzy
 msgid "You do not have permission to add feedbacks"
-msgstr "Sinulla ei ole oikeuksia lisätä sähköpostimuistutuksia"
+msgstr "Sinulla ei ole oikeuksia lisätä palautteita"
 
 #: includes/settings.php:93 includes/settings.php:143
 #: includes/settings.php:197
@@ -245,20 +219,17 @@ msgid "You do not have permission to delete feedbacks"
 msgstr "Sinulla ei ole oikeuksia poistaa palautteita"
 
 #. Plugin URI of the plugin/theme
-#, fuzzy
 msgid "https://foxland.fi/downloads/edd-feedback"
-msgstr "https://foxland.fi/downloads/edd-members"
+msgstr "https://foxland.fi/downloads/edd-feedback"
 
 #. Description of the plugin/theme
 msgid "Send feedback emails automatically after purchase."
-msgstr ""
+msgstr "Lähetä automaattisesti palautesähköpostia ostoksen jälkeen."
 
 #. Author of the plugin/theme
-#, fuzzy
 msgid "Sami Keijonen"
 msgstr "Sami Keijonen"
 
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://foxland.fi"
 msgstr "https://foxland.fi"

@@ -13,27 +13,27 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.5\n"
 
-#: edd-feedback.php:161
+#: edd-feedback.php:160
 msgid "EDD Feedback Settings"
 msgstr ""
 
-#: edd-feedback.php:162
+#: edd-feedback.php:161
 msgid "Configure EDD Feedback Settings"
 msgstr ""
 
-#: edd-feedback.php:167
+#: edd-feedback.php:166 includes/meta-boxes.php:23
 msgid "Disable Feedback Emails"
 msgstr ""
 
-#: edd-feedback.php:168
+#: edd-feedback.php:167
 msgid "Check this box if you do not want to send feedback emails."
 msgstr ""
 
-#: edd-feedback.php:173
+#: edd-feedback.php:172
 msgid "Feedbacks"
 msgstr ""
 
-#: edd-feedback.php:174
+#: edd-feedback.php:173
 msgid "Configure the feedback notice emails."
 msgstr ""
 
@@ -43,19 +43,29 @@ msgid ""
 "\n"
 "We would love to hear feedback from you.\n"
 "\n"
-"You have purchased following products from us: {edd_feedback_downloads}\n"
+"You have purchased following products from us:\n"
+"\n"
+"{download_list}\n"
 "\n"
 "Are you happy with your purchase? Is there anything we can do for you?"
 msgstr ""
 
 #: includes/EDD_Feedback_Emails.php:46 includes/feedbacks.php:69
-#: includes/feedbacks.php:111 includes/settings.php:96
+#: includes/feedbacks.php:114 includes/settings.php:96
 #: includes/settings.php:150
 msgid "Love to hear feedback"
 msgstr ""
 
 #: includes/EDD_Feedback_Emails.php:54 includes/settings.php:223
 msgid "Feedback"
+msgstr ""
+
+#: includes/EDD_Feedback_Emails.php:96
+msgid "Quantity"
+msgstr ""
+
+#: includes/EDD_Feedback_Emails.php:101
+msgid "SKU"
 msgstr ""
 
 #: includes/add-feedback.php:21 includes/add-feedback.php:65
@@ -147,44 +157,8 @@ msgstr ""
 msgid "Three months after purchase"
 msgstr ""
 
-#: includes/meta-boxes.php:28
-msgid "Set as private"
-msgstr ""
-
-#: includes/meta-boxes.php:58
-msgid "All content have been marked as private in global %ssettings%s page."
-msgstr ""
-
-#: includes/meta-boxes.php:63
-msgid "Check this content as private."
-msgstr ""
-
-#: includes/meta-boxes.php:90
-msgid "Check to enable membership length creation"
-msgstr ""
-
-#: includes/meta-boxes.php:97 includes/meta-boxes.php:157
-msgid "Days"
-msgstr ""
-
-#: includes/meta-boxes.php:98 includes/meta-boxes.php:158
-msgid "Weeks"
-msgstr ""
-
-#: includes/meta-boxes.php:99 includes/meta-boxes.php:159
-msgid "Months"
-msgstr ""
-
-#: includes/meta-boxes.php:100 includes/meta-boxes.php:160
-msgid "Years"
-msgstr ""
-
-#: includes/meta-boxes.php:102
-msgid "How long are membership valid for?"
-msgstr ""
-
-#: includes/meta-boxes.php:127
-msgid "Membership length"
+#: includes/meta-boxes.php:48
+msgid "Check this if you want to disable feedback emails for this item."
 msgstr ""
 
 #: includes/settings.php:30
