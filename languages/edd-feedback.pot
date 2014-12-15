@@ -45,7 +45,7 @@ msgid ""
 "\n"
 "You have purchased following products from us:\n"
 "\n"
-"{download_list}\n"
+"{downloads}\n"
 "\n"
 "Are you happy with your purchase? Is there anything we can do for you?"
 msgstr ""
@@ -98,18 +98,18 @@ msgid ""
 msgstr ""
 
 #: includes/add-feedback.php:55 includes/edit-feedback.php:61
-msgid "The customer's name"
+msgid "The download list"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "EDD Feedback"
 msgstr ""
 
-#: includes/class.extension-activation.php:92
+#: includes/class.extension-activation.php:85
 msgid "requires Easy Digital Downloads! Please activate it to continue!"
 msgstr ""
 
-#: includes/class.extension-activation.php:94
+#: includes/class.extension-activation.php:87
 msgid "requires Easy Digital Downloads! Please install it to continue!"
 msgstr ""
 
