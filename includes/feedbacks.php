@@ -72,21 +72,23 @@ function edd_feedback_get_feedback( $feedback_id = 0 ) {
 
 We would love to hear feedback from you.
 
-You have purchased following products from us: {edd_feedback_downloads}
+You have purchased following products from us:
+
+{downloads}
 
 Are you happy with your purchase? Is there anything we can do for you?'
 	);
 
-	$feedback   = isset( $feedbacks[ $feedback_id ] ) ? $feedbacks[ $feedback_id ] : $feedbacks[0];
+	$feedback = isset( $feedbacks[ $feedback_id ] ) ? $feedbacks[ $feedback_id ] : $feedbacks[0];
 
-	$feedback   = wp_parse_args( $feedback, $defaults );
+	$feedback = wp_parse_args( $feedback, $defaults );
 
 	return apply_filters( 'edd_feedback_get_feedback', $feedback, $feedback_id );
 
 }
 
 /**
- * Retrieve feedback periods
+ * Retrieve feedbacks
  *
  * @since  1.0.0
  * @return array Feedbacks defined in settings
@@ -102,13 +104,15 @@ function edd_feedback_get_feedbacks() {
 
 We would love to hear feedback from you.
 
-You have purchased following products from us: {edd_feedback_downloads}
+You have purchased following products from us:
+
+{downloads}
 
 Are you happy with your purchase? Is there anything we can do for you?';
 
 		$feedbacks[0] = array(
-			'send_period' => '-1week',
 			'subject'     => __( 'Love to hear feedback', 'edd-feedback' ),
+			'send_period' => '-1week',
 			'message'     => $message
 		);
 
@@ -150,6 +154,9 @@ function edd_feedback_scheduled_reminders() {
 			'status' => 'complete'
 		);
 		
+		// Add filter for developers
+		$payments_args = apply_filters( 'edd_feedback_payments_args', $payments_args );
+		
 		// Get payments
 		$get_payments = edd_get_payments( $payments_args );
 		
@@ -165,6 +172,23 @@ function edd_feedback_scheduled_reminders() {
 			
 			// Get email from payment ID
 			$email = edd_get_payment_user_email( $payment_id );
+			
+			// Get downloads based on payment id
+			$downloads = edd_get_payment_meta_downloads( $payment_id );
+			
+			// Set feedback disabled array
+			$feedback_disabled = array();
+			
+			if ( is_array( $downloads ) ) {
+				// Get downloads which we don't want to send feedback
+				foreach ( $downloads as $download ) {
+					$feedback_disabled = get_post_meta( $download['id'], '_edd_feedback_disable_feedback_emails', true );
+					// Bail if feedback is disabled for this download
+					if( $feedback_disabled ) {
+						continue;
+					}
+				}
+			}
 			
 			$sent_time = get_post_meta( $payment_id, sanitize_key( '_edd_feedback_sent_' . $feedback['send_period'] ), true );
 			
