@@ -157,6 +157,18 @@ msgstr ""
 msgid "Three months after purchase"
 msgstr ""
 
+#: includes/functions.php:39
+msgid "Can we send you feedback email?"
+msgstr ""
+
+#: includes/functions.php:63
+msgid "none"
+msgstr ""
+
+#: includes/functions.php:67 includes/functions.php:69
+msgid "Send feedback email"
+msgstr ""
+
 #: includes/meta-boxes.php:48
 msgid "Check this if you want to disable feedback emails for this item."
 msgstr ""
