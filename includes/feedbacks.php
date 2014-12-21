@@ -173,38 +173,32 @@ function edd_feedback_scheduled_reminders() {
 			// Get email from payment ID
 			$email = edd_get_payment_user_email( $payment_id );
 			
-			// Get downloads based on payment id
-			$downloads = edd_get_payment_meta_downloads( $payment_id );
+			// Get payment meta details based on payment id
+			$cart_items = edd_get_payment_meta_cart_details( $payment_id );
+			
+			// Get payment meta based on payment id
+			$payment_meta     = edd_get_payment_meta( $payment_id );
+			$agree_send_email = $payment_meta['edd_feedback_agree_send_email'];
+			
+			// Bail if user have unchecked email feedback at checkout
+			if( !empty( $agree_send_email ) && true != $agree_send_email ) {
+				continue;
+			}
 			
 			// Set feedback disabled array
 			$feedback_disabled = array();
 			
-			if ( is_array( $downloads ) ) {
+			if ( is_array( $cart_items ) ) {
 				// Get downloads which we don't want to send feedback
-				foreach ( $downloads as $download ) {
-					$feedback_disabled = get_post_meta( $download['id'], '_edd_feedback_disable_feedback_emails', true );
-					// Bail if feedback is disabled for this download
-					if( $feedback_disabled ) {
-						continue;
-					}
+				foreach ( $cart_items as $key => $cart_item ) {
+					$item_id  = isset( $cart_item['id'] ) ? $cart_item['id'] : $cart_item;
+					$feedback_disabled[] = get_post_meta( $item_id, '_edd_feedback_disable_feedback_emails', true );
 				}
 			}
 			
-			$sent_time = get_post_meta( $payment_id, sanitize_key( '_edd_feedback_sent_' . $feedback['send_period'] ), true );
-			
-			if( $sent_time ) {
-
-				$expire_date = strtotime( $feedback['send_period'], $sent_time );
-
-				if( time() < $expire_date ) {
-
-					// The renewal period isn't expired yet so don't send again
-					//continue;
-	
-				}
-
-				//delete_post_meta( $payment_id, sanitize_key( '_edd_feedback_sent_' . $feedback['send_period'] ) );
-
+			// Bail if feedback is disabled for all downloads in this purchase
+			if( false === in_array( false, $feedback_disabled, true ) ) {
+				continue;
 			}
 			
 			// Send email for all that have purchased something that matches feedback period
