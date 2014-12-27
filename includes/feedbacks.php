@@ -181,23 +181,7 @@ function edd_feedback_scheduled_reminders() {
 			$agree_send_email = $payment_meta['edd_feedback_agree_send_email'];
 			
 			// Bail if user have unchecked email feedback at checkout
-			if( !empty( $agree_send_email ) && true != $agree_send_email ) {
-				continue;
-			}
-			
-			// Set feedback disabled array
-			$feedback_disabled = array();
-			
-			if ( is_array( $cart_items ) ) {
-				// Get downloads which we don't want to send feedback
-				foreach ( $cart_items as $key => $cart_item ) {
-					$item_id  = isset( $cart_item['id'] ) ? $cart_item['id'] : $cart_item;
-					$feedback_disabled[] = get_post_meta( $item_id, '_edd_feedback_disable_feedback_emails', true );
-				}
-			}
-			
-			// Bail if feedback is disabled for all downloads in this purchase
-			if( false === in_array( false, $feedback_disabled, true ) ) {
+			if( isset( $agree_send_email ) && true != $agree_send_email ) {
 				continue;
 			}
 			
