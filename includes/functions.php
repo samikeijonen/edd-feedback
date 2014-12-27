@@ -32,14 +32,35 @@ function edd_feedback_disabled() {
  * @return void
  */
 function edd_feedback_custom_checkout_fields() {
-  ?>
-	<fieldset id="edd_feedback_send_email">
-		<p>
-			<input name="edd_feedback_agree_send_email" type="checkbox" id="edd_feedback_agree_send_email" value="1" checked="checked" />
-			<label for="edd_feedback_agree_send_email"><?php echo __( 'Can we send you feedback email?', 'edd-feedback' ); ?></label>
-		</p>
-	</fieldset>
-	<?php
+	
+	// Get cart items
+	$cart_items = edd_get_cart_contents();
+	
+	// Proceed if we have cart items
+	if ( $cart_items ) {
+		
+		foreach ( $cart_items as $key => $item ) {
+			$feedback_disabled = get_post_meta( $item['id'], '_edd_feedback_disable_feedback_emails', true );
+			// If we found at least one value that is not true, break and proceed 
+			if (  true != $feedback_disabled ) {
+				$feedback_disabled = false;
+				break;
+			}
+		}
+		
+		// If feedback is not disabled at least for one download go ahead and proceed
+		if( !$feedback_disabled ) {
+			?>
+			<fieldset id="edd_feedback_send_email">
+				<p>
+					<input name="edd_feedback_agree_send_email" type="checkbox" id="edd_feedback_agree_send_email" value="1" checked="checked" />
+					<label for="edd_feedback_agree_send_email"><?php echo __( 'Allow sending feedback email.', 'edd-feedback' ); ?></label>
+				</p>
+			</fieldset>
+			<?php
+		}
+	}
+	
 }
 add_action( 'edd_purchase_form_before_submit', 'edd_feedback_custom_checkout_fields' );
 
