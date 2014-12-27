@@ -157,15 +157,15 @@ msgstr ""
 msgid "Three months after purchase"
 msgstr ""
 
-#: includes/functions.php:39
-msgid "Can we send you feedback email?"
+#: includes/functions.php:57
+msgid "Allow sending feedback email."
 msgstr ""
 
-#: includes/functions.php:63
+#: includes/functions.php:90
 msgid "none"
 msgstr ""
 
-#: includes/functions.php:67 includes/functions.php:69
+#: includes/functions.php:94 includes/functions.php:96
 msgid "Send feedback email"
 msgstr ""
 
