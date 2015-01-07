@@ -180,14 +180,11 @@ function edd_feedback_scheduled_reminders() {
 			$payment_meta     = edd_get_payment_meta( $payment_id );
 			$agree_send_email = $payment_meta['edd_feedback_agree_send_email'];
 			
-			// Bail if user have unchecked email feedback at checkout
-			if( isset( $agree_send_email ) && true != $agree_send_email ) {
-				continue;
+			// Send email for all approved items
+			if( $agree_send_email ) {		
+				$edd_feedback_emails->send_renewal_reminder( sanitize_email( $email ), $feedback_id, $payment_id );
 			}
 			
-			// Send email for all that have purchased something that matches feedback period
-			$edd_feedback_emails->send_renewal_reminder( sanitize_email( $email ), $feedback_id, $payment_id );
-
 		}
 
 	}
