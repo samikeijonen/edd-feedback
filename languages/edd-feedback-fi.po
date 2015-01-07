@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
-"PO-Revision-Date: 2014-12-27 12:07+0200\n"
+"PO-Revision-Date: 2015-01-07 16:28+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team:  <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
@@ -245,9 +245,3 @@ msgstr "Sami Keijonen"
 #. Author URI of the plugin/theme
 msgid "https://foxland.fi"
 msgstr "https://foxland.fi"
-
-#~ msgid "Can we send you feedback email?"
-#~ msgstr "Voimmeko lähettää palautesähköpostia?"
-
-#~ msgid "The customer's name"
-#~ msgstr "Asiakkaan nimi"
