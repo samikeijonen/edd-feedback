@@ -26,6 +26,20 @@ function edd_feedback_disabled() {
 }
 
 /**
+ * Check if allow sending feedback emails in checkout page is disabled
+ *
+ * @since  1.0.1
+ * @return boolean Checkbox disabled
+ */
+function edd_feedback_allow_checkout_hidden() {
+	if( edd_get_option( 'edd_feedback_allow_checkout_hidden' ) ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/**
  * Ask customers in the checkout do they want feedback email
  *
  * @since  1.0.0
@@ -48,16 +62,27 @@ function edd_feedback_custom_checkout_fields() {
 			}
 		}
 		
-		// If feedback is not disabled at least for one download go ahead and proceed
+		/**
+		 * If feedback is not disabled at least for one download go ahead and proceed.
+		 *
+		 * Also check do we want to hide 'Allow sending feedback emails' on checkout page.
+		 */
 		if( !$feedback_disabled ) {
+			$allow_feedback_hidden = edd_feedback_allow_checkout_hidden();
+			if( !$allow_feedback_hidden ) {
 			?>
-			<fieldset id="edd_feedback_send_email">
-				<p>
-					<input name="edd_feedback_agree_send_email" type="checkbox" id="edd_feedback_agree_send_email" value="1" checked="checked" />
-					<label for="edd_feedback_agree_send_email"><?php echo __( 'Allow sending feedback email.', 'edd-feedback' ); ?></label>
-				</p>
-			</fieldset>
+				<fieldset id="edd_feedback_send_email">
+					<p>
+						<input name="edd_feedback_agree_send_email" type="checkbox" id="edd_feedback_agree_send_email" value="1" checked="checked" />
+						<label for="edd_feedback_agree_send_email"><?php echo __( 'Allow sending feedback email.', 'edd-feedback' ); ?></label>
+					</p>
+				</fieldset>
 			<?php
+			} else {
+			?>
+				<input name="edd_feedback_agree_send_email" type="hidden" value="1" />
+			<?php
+			}
 		}
 	}
 	
