@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Feedback
  * Plugin URI:      https://foxland.fi/downloads/edd-feedback
  * Description:     Send feedback emails automatically after purchase. 
- * Version:         1.0.0
+ * Version:         1.0.1
  * Author:          Sami Keijonen
  * Author URI:      https://foxland.fi
  * Text Domain:     edd-feedback
@@ -73,7 +73,7 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 		private function setup_constants() {
 			
 			// Plugin version
-			define( 'EDD_FEEDBACK_VER', '1.0.0' );
+			define( 'EDD_FEEDBACK_VER', '1.0.1' );
 
 			// Plugin path
 			define( 'EDD_FEEDBACK_DIR', plugin_dir_path( __FILE__ ) );
@@ -168,6 +168,12 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 					'type'        => 'checkbox'
 				),
 				array(
+					'id'          => 'edd_feedback_allow_checkout_hidden',
+					'name'        => __( 'Hide on Checkout', 'edd-feedback' ),
+					'desc'        => __( 'Check this box if you do not want to show "Allow sending feedback email" checkbox on the checkout page. This is useful when you are already asking users to join email list.', 'edd-feedback' ),
+					'type'        => 'checkbox'
+				),
+				array(
 					'id'          => 'feedback_feedbacks', // EDD adds prefix 'edd_' in hook type
 					'name'        => __( 'Feedbacks', 'edd-feedback' ),
 					'desc'        => __( 'Configure the feedback notice emails.', 'edd-feedback' ),
@@ -196,7 +202,7 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 			}
 
 			$activation = new EDD_Extension_Activation( plugin_dir_path( __FILE__ ), basename( __FILE__ ) );
-			$activation = $activation->edd_feedback_run();
+			$activation = $activation->run();
 		} else {
 			return EDD_Feedback::instance();
 		}
