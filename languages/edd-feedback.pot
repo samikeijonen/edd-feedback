@@ -30,10 +30,21 @@ msgid "Check this box if you do not want to send feedback emails."
 msgstr ""
 
 #: edd-feedback.php:172
-msgid "Feedbacks"
+msgid "Hide on Checkout"
 msgstr ""
 
 #: edd-feedback.php:173
+msgid ""
+"Check this box if you do not want to show \"Allow sending feedback email\" "
+"checkbox on the checkout page. This is useful when you are already asking "
+"users to join email list."
+msgstr ""
+
+#: edd-feedback.php:178
+msgid "Feedbacks"
+msgstr ""
+
+#: edd-feedback.php:179
 msgid "Configure the feedback notice emails."
 msgstr ""
 
@@ -157,15 +168,15 @@ msgstr ""
 msgid "Three months after purchase"
 msgstr ""
 
-#: includes/functions.php:57
+#: includes/functions.php:77
 msgid "Allow sending feedback email."
 msgstr ""
 
-#: includes/functions.php:90
+#: includes/functions.php:115
 msgid "none"
 msgstr ""
 
-#: includes/functions.php:94 includes/functions.php:96
+#: includes/functions.php:119 includes/functions.php:121
 msgid "Send feedback email"
 msgstr ""
 

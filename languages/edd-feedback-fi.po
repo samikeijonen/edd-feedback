@@ -5,14 +5,14 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
-"PO-Revision-Date: 2015-01-07 16:28+0200\n"
+"PO-Revision-Date: 2015-01-14 17:38+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team:  <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.7.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: edd-feedback.php:160
@@ -32,10 +32,24 @@ msgid "Check this box if you do not want to send feedback emails."
 msgstr "Valitse tämä, jos et halua lähettää palautesähköpostia."
 
 #: edd-feedback.php:172
+msgid "Hide on Checkout"
+msgstr "Piilota kassasivulla"
+
+#: edd-feedback.php:173
+msgid ""
+"Check this box if you do not want to show \"Allow sending feedback email\" "
+"checkbox on the checkout page. This is useful when you are already asking "
+"users to join email list."
+msgstr ""
+"Valitse tämä, jos et halua näyttää \"Salli palautesähköpostin lähettäminen"
+"\" ruksia kassasivulla. Tämä on hyödyllistä, jos jo kysyt käyttäjiä "
+"liittymään sähköpostilistalle."
+
+#: edd-feedback.php:178
 msgid "Feedbacks"
 msgstr "Palautteet"
 
-#: edd-feedback.php:173
+#: edd-feedback.php:179
 msgid "Configure the feedback notice emails."
 msgstr "Hallitse palautesähköpostia."
 
@@ -172,15 +186,15 @@ msgstr "Kaksi kuukautta oston jälkeen"
 msgid "Three months after purchase"
 msgstr "Kolme kuukautta oston jälkeen"
 
-#: includes/functions.php:57
+#: includes/functions.php:77
 msgid "Allow sending feedback email."
 msgstr "Salli palautesähköpostin lähettäminen."
 
-#: includes/functions.php:90
+#: includes/functions.php:115
 msgid "none"
 msgstr "Ei mitään"
 
-#: includes/functions.php:94 includes/functions.php:96
+#: includes/functions.php:119 includes/functions.php:121
 msgid "Send feedback email"
 msgstr "Lähetä palautesähköpostia"
 
