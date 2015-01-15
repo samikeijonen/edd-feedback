@@ -5,14 +5,14 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
-"PO-Revision-Date: 2014-11-26 22:40+0200\n"
+"PO-Revision-Date: 2015-01-07 16:28+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team:  <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: edd-feedback.php:160
@@ -47,7 +47,7 @@ msgid ""
 "\n"
 "You have purchased following products from us:\n"
 "\n"
-"{download_list}\n"
+"{downloads}\n"
 "\n"
 "Are you happy with your purchase? Is there anything we can do for you?"
 msgstr ""
@@ -55,11 +55,11 @@ msgstr ""
 "\n"
 "Haluaisimme kuulla palautetta.\n"
 "\n"
-"Olette ostaneet meiltä seuraavat tuotteet:\n"
+"Olet ostanut meiltä seuraavat tuotteet:\n"
 "\n"
-"{download_list}\n"
+"{downloads}\n"
 "\n"
-"Oletko tyytyväinen ostokseesi? Voimmeko auttaa jossakin asiassa?"
+"Oletko ollut tyytyväinen ostokseesi? Voimmeko auttaa jossakin asiassa?"
 
 #: includes/EDD_Feedback_Emails.php:46 includes/feedbacks.php:69
 #: includes/feedbacks.php:114 includes/settings.php:96
@@ -109,20 +109,20 @@ msgid ""
 msgstr "Palautesähköpostin viesti. Seuraavat tagit ovat käytössä:"
 
 #: includes/add-feedback.php:55 includes/edit-feedback.php:61
-msgid "The customer's name"
-msgstr "Asiakkaan nimi"
+msgid "The download list"
+msgstr "Latauslista"
 
 #. Plugin Name of the plugin/theme
 msgid "EDD Feedback"
 msgstr "EDD palaute"
 
-#: includes/class.extension-activation.php:92
+#: includes/class.extension-activation.php:85
 msgid "requires Easy Digital Downloads! Please activate it to continue!"
 msgstr ""
 "vaatii Easy Digital Downloads -lisäosan! Aktivoi se ensin, jotta pääset "
 "eteenpäin!"
 
-#: includes/class.extension-activation.php:94
+#: includes/class.extension-activation.php:87
 msgid "requires Easy Digital Downloads! Please install it to continue!"
 msgstr ""
 "vaatii Easy Digital Downloads -lisäosan! Asenna se ensin, jotta pääset "
@@ -171,6 +171,18 @@ msgstr "Kaksi kuukautta oston jälkeen"
 #: includes/feedbacks.php:38
 msgid "Three months after purchase"
 msgstr "Kolme kuukautta oston jälkeen"
+
+#: includes/functions.php:57
+msgid "Allow sending feedback email."
+msgstr "Salli palautesähköpostin lähettäminen."
+
+#: includes/functions.php:90
+msgid "none"
+msgstr "Ei mitään"
+
+#: includes/functions.php:94 includes/functions.php:96
+msgid "Send feedback email"
+msgstr "Lähetä palautesähköpostia"
 
 #: includes/meta-boxes.php:48
 msgid "Check this if you want to disable feedback emails for this item."
