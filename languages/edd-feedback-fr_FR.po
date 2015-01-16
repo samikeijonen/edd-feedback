@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
+"PO-Revision-Date: 2015-01-16 08:56+0100\n"
+"Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
+"Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-01-13 08:55+0100\n"
-"Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
-"Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "X-Generator: Poedit 1.7.3\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: fr_FR\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: edd-feedback.php:160
@@ -30,8 +30,7 @@ msgstr "Désactiver les e-mails de feedback"
 
 #: edd-feedback.php:167
 msgid "Check this box if you do not want to send feedback emails."
-msgstr ""
-"Cochez cette case si vous ne voulez pas envoyer d'e-mails de feedback."
+msgstr "Cochez cette case si vous ne voulez pas envoyer d'e-mails de feedback."
 
 #: edd-feedback.php:172
 msgid "Feedbacks"
@@ -173,6 +172,18 @@ msgstr "Deux mois après l&#39;achat"
 #: includes/feedbacks.php:38
 msgid "Three months after purchase"
 msgstr "Trois mois après l&#39;achat"
+
+#: includes/functions.php:57
+msgid "Allow sending feedback email."
+msgstr "Autoriser l'envoi de l'e-mails de feedback."
+
+#: includes/functions.php:90
+msgid "none"
+msgstr "aucun"
+
+#: includes/functions.php:94 includes/functions.php:96
+msgid "Send feedback email"
+msgstr "Envoyer l'e-mail de feedback"
 
 #: includes/meta-boxes.php:48
 msgid "Check this if you want to disable feedback emails for this item."
