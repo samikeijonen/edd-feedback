@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
 "POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
-"PO-Revision-Date: 2015-01-16 08:56+0100\n"
+"PO-Revision-Date: 2015-01-17 01:01+0100\n"
 "Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
@@ -175,7 +175,7 @@ msgstr "Trois mois après l&#39;achat"
 
 #: includes/functions.php:57
 msgid "Allow sending feedback email."
-msgstr "Autoriser l'envoi de l'e-mails de feedback."
+msgstr "Autoriser l'envoi de l'e-mail de feedback."
 
 #: includes/functions.php:90
 msgid "none"
