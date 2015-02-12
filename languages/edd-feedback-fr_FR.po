@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
-"POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
-"PO-Revision-Date: 2015-01-17 01:01+0100\n"
+"Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
+"POT-Creation-Date: 2015-02-12 10:35:50+00:00\n"
+"PO-Revision-Date: 2015-02-12 11:43+0100\n"
 "Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
@@ -33,10 +33,24 @@ msgid "Check this box if you do not want to send feedback emails."
 msgstr "Cochez cette case si vous ne voulez pas envoyer d'e-mails de feedback."
 
 #: edd-feedback.php:172
+msgid "Hide on Checkout"
+msgstr "Cacher sur la page de commande"
+
+#: edd-feedback.php:173
+msgid ""
+"Check this box if you do not want to show \"Allow sending feedback email\" "
+"checkbox on the checkout page. This is useful when you are already asking "
+"users to join email list."
+msgstr ""
+"Cochez cette case si vous ne voulez pas afficher \"Permettre l&#39;envoi d'e-"
+"mail de feedback\" sur la page de commande. C'est utile lorsque vous "
+"demandez aux utilisateurs déjà de s'abonner à votre newsletter."
+
+#: edd-feedback.php:178
 msgid "Feedbacks"
 msgstr "Feedbacks"
 
-#: edd-feedback.php:173
+#: edd-feedback.php:179
 msgid "Configure the feedback notice emails."
 msgstr "Configurez les e-mails de notification de feedback."
 
@@ -116,10 +130,6 @@ msgstr ""
 msgid "The download list"
 msgstr "La liste de téléchargement"
 
-#. Plugin Name of the plugin/theme
-msgid "EDD Feedback"
-msgstr "EDD Feedback"
-
 #: includes/class.extension-activation.php:85
 msgid "requires Easy Digital Downloads! Please activate it to continue!"
 msgstr "nécessite Easy Digital Downloads. Veuillez l'activer pour continuer !"
@@ -173,15 +183,15 @@ msgstr "Deux mois après l&#39;achat"
 msgid "Three months after purchase"
 msgstr "Trois mois après l&#39;achat"
 
-#: includes/functions.php:57
+#: includes/functions.php:77
 msgid "Allow sending feedback email."
 msgstr "Autoriser l'envoi de l'e-mail de feedback."
 
-#: includes/functions.php:90
+#: includes/functions.php:115
 msgid "none"
 msgstr "aucun"
 
-#: includes/functions.php:94 includes/functions.php:96
+#: includes/functions.php:119 includes/functions.php:121
 msgid "Send feedback email"
 msgstr "Envoyer l'e-mail de feedback"
 
@@ -233,18 +243,18 @@ msgstr "Aucune ID de feedback n'a été fournie"
 msgid "You do not have permission to delete feedbacks"
 msgstr "Vous n&rsquo;avez pas l&rsquo;autorisation de supprimer des feedbacks"
 
-#. Plugin URI of the plugin/theme
-msgid "https://foxland.fi/downloads/edd-feedback"
-msgstr "https://foxland.fi/downloads/edd-feedback"
-
 #. Description of the plugin/theme
 msgid "Send feedback emails automatically after purchase."
 msgstr "Envoyer des emails de feedback automatiquement après l'achat."
 
-#. Author of the plugin/theme
-msgid "Sami Keijonen"
-msgstr "Sami Keijonen"
+#~ msgid "EDD Feedback"
+#~ msgstr "EDD Feedback"
 
-#. Author URI of the plugin/theme
-msgid "https://foxland.fi"
-msgstr "https://foxland.fi"
+#~ msgid "https://foxland.fi/downloads/edd-feedback"
+#~ msgstr "https://foxland.fi/downloads/edd-feedback"
+
+#~ msgid "Sami Keijonen"
+#~ msgstr "Sami Keijonen"
+
+#~ msgid "https://foxland.fi"
+#~ msgstr "https://foxland.fi"
