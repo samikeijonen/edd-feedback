@@ -14,7 +14,7 @@
     "grunt-po2mo": "~0.1.0",
     "grunt-potomo": "~0.1.7",
     "grunt-text-replace": "^0.3.12",
-    "grunt-wp-i18n": "~0.4.3",
+    "grunt-wp-i18n": "~0.5.0",
     "load-grunt-tasks": "^0.5.0"
   }
 }

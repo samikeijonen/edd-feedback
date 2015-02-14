@@ -12,9 +12,37 @@ grunt.initConfig({
         options: {
           domainPath: '/languages/',           // Where to save the POT file.
           exclude: ['build/.*'],               // Exlude build folder.
+          mainFile: 'edd-feedback.php',    // Main project file.
           potFilename: 'edd-feedback.pot',     // Name of the POT file.
-          type: 'wp-plugin',                   // Type of project (wp-plugin or wp-theme).
-          updateTimestamp: false,              // Whether the POT-Creation-Date should be updated without other changes.
+          potHeaders: {
+              poedit: true,                 // Includes common Poedit headers.
+                    'x-poedit-keywordslist': true // Include a list of all possible gettext functions.
+                },
+          type: 'wp-plugin',    // Type of project (wp-plugin or wp-theme).
+          updateTimestamp: true,    // Whether the POT-Creation-Date should be updated without other changes.
+          updatePoFiles: true,              // Whether to update PO files in the same directory as the POT file.
+          processPot: function( pot, options ) {
+            pot.headers['report-msgid-bugs-to'] = 'https://foxland.fi/contact/';
+            pot.headers['last-translator'] = 'Foxland (https://foxland.fi/)\n';
+            pot.headers['language-team'] = 'Foxland  <contact@foxland.fi>\n';
+            pot.headers['language'] = 'en_US';
+            var translation, // Exclude meta data from pot.
+              excluded_meta = [
+                            'Plugin Name of the plugin/theme',
+                            'Plugin URI of the plugin/theme',
+                            'Author of the plugin/theme',
+                            'Author URI of the plugin/theme'
+                        ];
+                        for ( translation in pot.translations[''] ) {
+                          if ( 'undefined' !== typeof pot.translations[''][ translation ].comments.extracted ) {
+                            if ( excluded_meta.indexOf( pot.translations[''][ translation ].comments.extracted ) >= 0 ) {
+                              console.log( 'Excluded meta: ' + pot.translations[''][ translation ].comments.extracted );
+                                delete pot.translations[''][ translation ];
+                            }
+                        }
+                    }
+            return pot;
+          }
         }
       }
     },

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-feedback\n"
-"POT-Creation-Date: 2014-11-23 09:47:21+00:00\n"
+"Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
+"POT-Creation-Date: 2015-02-12 10:35:50+00:00\n"
 "PO-Revision-Date: 2015-01-14 17:38+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team:  <sami.keijonen@foxnet.fi>\n"
@@ -41,9 +41,9 @@ msgid ""
 "checkbox on the checkout page. This is useful when you are already asking "
 "users to join email list."
 msgstr ""
-"Valitse tämä, jos et halua näyttää \"Salli palautesähköpostin lähettäminen"
-"\" ruksia kassasivulla. Tämä on hyödyllistä, jos jo kysyt käyttäjiä "
-"liittymään sähköpostilistalle."
+"Valitse tämä, jos et halua näyttää \"Salli palautesähköpostin lähettäminen\" "
+"ruksia kassasivulla. Tämä on hyödyllistä, jos jo kysyt käyttäjiä liittymään "
+"sähköpostilistalle."
 
 #: edd-feedback.php:178
 msgid "Feedbacks"
@@ -125,10 +125,6 @@ msgstr "Palautesähköpostin viesti. Seuraavat tagit ovat käytössä:"
 #: includes/add-feedback.php:55 includes/edit-feedback.php:61
 msgid "The download list"
 msgstr "Latauslista"
-
-#. Plugin Name of the plugin/theme
-msgid "EDD Feedback"
-msgstr "EDD palaute"
 
 #: includes/class.extension-activation.php:85
 msgid "requires Easy Digital Downloads! Please activate it to continue!"
@@ -244,18 +240,18 @@ msgstr "Palautteen ID ei ole tiedossa"
 msgid "You do not have permission to delete feedbacks"
 msgstr "Sinulla ei ole oikeuksia poistaa palautteita"
 
-#. Plugin URI of the plugin/theme
-msgid "https://foxland.fi/downloads/edd-feedback"
-msgstr "https://foxland.fi/downloads/edd-feedback"
-
 #. Description of the plugin/theme
 msgid "Send feedback emails automatically after purchase."
 msgstr "Lähetä automaattisesti palautesähköpostia ostoksen jälkeen."
 
-#. Author of the plugin/theme
-msgid "Sami Keijonen"
-msgstr "Sami Keijonen"
+#~ msgid "EDD Feedback"
+#~ msgstr "EDD palaute"
 
-#. Author URI of the plugin/theme
-msgid "https://foxland.fi"
-msgstr "https://foxland.fi"
+#~ msgid "https://foxland.fi/downloads/edd-feedback"
+#~ msgstr "https://foxland.fi/downloads/edd-feedback"
+
+#~ msgid "Sami Keijonen"
+#~ msgstr "Sami Keijonen"
+
+#~ msgid "https://foxland.fi"
+#~ msgstr "https://foxland.fi"
