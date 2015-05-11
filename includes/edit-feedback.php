@@ -13,7 +13,7 @@
  */
 
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) { 
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
@@ -39,7 +39,7 @@ $feedback    = edd_feedback_get_feedback( $feedback_id );
 			</tr>
 			<tr>
 				<th scope="row" valign="top">
-					<label for="edd-feedback-period"><?php _e( 'Email Subject', 'edd-feedback' ); ?></label>
+					<label for="edd-feedback-period"><?php _e( 'Email Period', 'edd-feedback' ); ?></label>
 				</th>
 				<td>
 					<select name="period" id="edd-feedback-period">
@@ -62,7 +62,7 @@ $feedback    = edd_feedback_get_feedback( $feedback_id );
 					</ul>
 				</td>
 			</tr>
-			
+
 		</tbody>
 	</table>
 	<p class="submit">
