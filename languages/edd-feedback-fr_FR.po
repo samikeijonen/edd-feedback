@@ -4,15 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-02-12 10:35:50+00:00\n"
-"PO-Revision-Date: 2015-02-12 11:43+0100\n"
+"POT-Creation-Date: 2015-05-11 18:07+0100\n"
+"PO-Revision-Date: 2015-05-11 18:11+0100\n"
 "Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.8beta2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -104,15 +104,18 @@ msgstr "Ajouter un feedback"
 msgid "Go Back"
 msgstr "Retour"
 
-#: includes/add-feedback.php:27 includes/add-feedback.php:36
-#: includes/add-feedback.php:49 includes/edit-feedback.php:33
-#: includes/edit-feedback.php:42
+#: includes/add-feedback.php:27 includes/add-feedback.php:49
+#: includes/edit-feedback.php:33 includes/edit-feedback.php:42
 msgid "Email Subject"
 msgstr "Sujet de l'e-mail"
 
 #: includes/add-feedback.php:31 includes/edit-feedback.php:37
 msgid "The subject line of the feedback email"
 msgstr "Sujet de l'e-mail du feedback"
+
+#: includes/add-feedback.php:36
+msgid "Email Period"
+msgstr "Moment de l'envoi"
 
 #: includes/add-feedback.php:44 includes/edit-feedback.php:50
 msgid "When should this email be sent?"
