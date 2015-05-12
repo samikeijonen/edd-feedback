@@ -25,6 +25,10 @@ Plugin resources are licensed under the [GNU GPL](http://www.gnu.org/licenses/ol
 
 ## Changelog
 
+### Version 1.0.2
+
+* Update translation files.
+
 ### Version 1.0.1
 
 * Bug fix: during the EDD update plugin crashed.
