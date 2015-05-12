@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</tr>
 			<tr>
 				<th scope="row" valign="top">
-					<label for="edd-feedback-period"><?php _e( 'Email Subject', 'edd-feedback' ); ?></label>
+					<label for="edd-feedback-period"><?php _e( 'Email Period', 'edd-feedback' ); ?></label>
 				</th>
 				<td>
 					<select name="period" id="edd-feedback-period">
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</ul>
 				</td>
 			</tr>
-			
+
 		</tbody>
 	</table>
 	<p class="submit">
