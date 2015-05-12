@@ -4,20 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2015-02-12 10:35:50+00:00\n"
-"PO-Revision-Date: 2015-02-14 21:51+0200\n"
-=======
-"POT-Creation-Date: 2015-05-11 16:07:11+00:00\n"
-"PO-Revision-Date: 2015-01-14 17:38+0200\n"
->>>>>>> b8feb35ecd0457c7c65e15027768cf5fff5cd2bf
+"POT-Creation-Date: 2015-05-12 17:30:45+00:00\n"
+"PO-Revision-Date: 2015-05-12 20:33+0200\n"
 "Last-Translator: Sami Keijonen <sami.keijonen@foxnet.fi>\n"
 "Language-Team:  <sami.keijonen@foxnet.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Poedit 1.7.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: edd-feedback.php:160
@@ -108,7 +103,7 @@ msgid "Go Back"
 msgstr "Mene takaisin"
 
 #: includes/add-feedback.php:27 includes/add-feedback.php:49
-#: includes/edit-feedback.php:33 includes/edit-feedback.php:42
+#: includes/edit-feedback.php:33
 msgid "Email Subject"
 msgstr "Sähköpostin aihe"
 
@@ -116,8 +111,7 @@ msgstr "Sähköpostin aihe"
 msgid "The subject line of the feedback email"
 msgstr "Sähköpostin aihe palautesähköpostissa"
 
-#: includes/add-feedback.php:36
-#, fuzzy
+#: includes/add-feedback.php:36 includes/edit-feedback.php:42
 msgid "Email Period"
 msgstr "Lähetysaika"
 
@@ -252,15 +246,3 @@ msgstr "Sinulla ei ole oikeuksia poistaa palautteita"
 #. Description of the plugin/theme
 msgid "Send feedback emails automatically after purchase."
 msgstr "Lähetä automaattisesti palautesähköpostia ostoksen jälkeen."
-
-#~ msgid "EDD Feedback"
-#~ msgstr "EDD palaute"
-
-#~ msgid "https://foxland.fi/downloads/edd-feedback"
-#~ msgstr "https://foxland.fi/downloads/edd-feedback"
-
-#~ msgid "Sami Keijonen"
-#~ msgstr "Sami Keijonen"
-
-#~ msgid "https://foxland.fi"
-#~ msgstr "https://foxland.fi"
