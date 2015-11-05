@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Feedback
  * Plugin URI:      https://foxland.fi/downloads/edd-feedback
  * Description:     Send feedback emails automatically after purchase. 
- * Version:         1.0.2
+ * Version:         1.0.3
  * Author:          Sami Keijonen
  * Author URI:      https://foxland.fi
  * Text Domain:     edd-feedback
@@ -73,7 +73,7 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 		private function setup_constants() {
 			
 			// Plugin version
-			define( 'EDD_FEEDBACK_VER', '1.0.2' );
+			define( 'EDD_FEEDBACK_VER', '1.0.3' );
 
 			// Plugin path
 			define( 'EDD_FEEDBACK_DIR', plugin_dir_path( __FILE__ ) );

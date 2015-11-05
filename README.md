@@ -25,6 +25,10 @@ Plugin resources are licensed under the [GNU GPL](http://www.gnu.org/licenses/ol
 
 ## Changelog
 
+### Version 1.0.3 - November 5, 2015
+
+* Update edd action hooks because they might conflict with other add-ons.
+
 ### Version 1.0.2
 
 * Update translation files.
