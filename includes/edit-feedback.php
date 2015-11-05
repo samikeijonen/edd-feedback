@@ -66,7 +66,7 @@ $feedback    = edd_feedback_get_feedback( $feedback_id );
 		</tbody>
 	</table>
 	<p class="submit">
-		<input type="hidden" name="edd-action" value="edit_feedback"/>
+		<input type="hidden" name="edd-action" value="feedback_edit_feedback"/>
 		<input type="hidden" name="feedback-id" value="<?php echo esc_attr( $feedback_id ); ?>"/>
 		<input type="hidden" name="edd-feedback-nonce" value="<?php echo wp_create_nonce( 'edd_feedback_nonce' ); ?>"/>
 		<input type="submit" value="<?php _e( 'Update Feedback', 'edd-feedback' ); ?>" class="button-primary"/>

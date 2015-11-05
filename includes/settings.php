@@ -39,7 +39,7 @@ function edd_feedback_settings( $args ) {
 				<td><?php echo esc_html( edd_feedback_get_period_label( $key ) ); ?></td>
 				<td>
 					<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=download&page=edd-feedback&edd_feedback_action=edit-feedback&feedback=' . $key ) ); ?>" class="edd-feedback-edit-feedback" data-key="<?php echo esc_attr( $key ); ?>"><?php _e( 'Edit', 'edd-feedback' ); ?></a>&nbsp;|
-					<a href="<?php echo esc_url( wp_nonce_url( admin_url( 'edit.php?post_type=download&page=edd-feedback&edd_action=delete_feedback&feedback-id=' . $key ) ) ); ?>" class="edd-delete"><?php _e( 'Delete', 'edd-feedback' ); ?></a>
+					<a href="<?php echo esc_url( wp_nonce_url( admin_url( 'edit.php?post_type=download&page=edd-feedback&edd_action=feedback_delete_feedback&feedback-id=' . $key ) ) ); ?>" class="edd-delete"><?php _e( 'Delete', 'edd-feedback' ); ?></a>
 				</td>
 			</tr>
 			<?php $i++; endforeach; ?>
@@ -120,7 +120,7 @@ Are you happy with your purchase? Is there anything we can do for you?';
 	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
 
 }
-add_action( 'edd_add_feedback', 'edd_feedback_process_add_feedback' );
+add_action( 'edd_feedback_add_feedback', 'edd_feedback_process_add_feedback' );
 
 /**
  * Processes the update of an existing feedback
@@ -174,7 +174,7 @@ Are you happy with your purchase? Is there anything we can do for you?';
 	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
 
 }
-add_action( 'edd_edit_feedback', 'edd_feedback_process_update_feedback' );
+add_action( 'edd_feedback_edit_feedback', 'edd_feedback_process_update_feedback' );
 
 /**
  * Processes the deletion of an existing feedback
@@ -209,7 +209,7 @@ function edd_feedback_process_delete_feedback( $data ) {
 	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
 
 }
-add_action( 'edd_delete_feedback', 'edd_feedback_process_delete_feedback' );
+add_action( 'edd_feedback_delete_feedback', 'edd_feedback_process_delete_feedback' );
 
 /**
  * Add feedback admin submenu page

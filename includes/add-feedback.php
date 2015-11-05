@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</tbody>
 	</table>
 	<p class="submit">
-		<input type="hidden" name="edd-action" value="add_feedback"/>
+		<input type="hidden" name="edd-action" value="feedback_add_feedback"/>
 		<input type="hidden" name="edd-feedback-nonce" value="<?php echo wp_create_nonce( 'edd_feedback_nonce' ); ?>"/>
 		<input type="submit" value="<?php _e( 'Add Feedback', 'edd-feedback' ); ?>" class="button-primary"/>
 	</p>
