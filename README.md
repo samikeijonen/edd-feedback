@@ -21,9 +21,13 @@ two day, and so on. And you can set more than one feedbacks!
 
 Plugin resources are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
-2014 &copy; [Sami Keijonen](https://foxland.fi).
+2014-2016 &copy; [Sami Keijonen](https://foxland.fi).
 
 ## Changelog
+
+### Version 1.0.4 - January 8, 2016
+
+* Use new section area in EDD settings.
 
 ### Version 1.0.3 - November 5, 2015
 
