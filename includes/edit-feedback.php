@@ -24,7 +24,7 @@ if ( ! isset( $_GET['feedback'] ) || ! is_numeric( $_GET['feedback'] ) ) {
 $feedback_id = absint( $_GET['feedback'] );
 $feedback    = edd_feedback_get_feedback( $feedback_id );
 ?>
-<h2><?php _e( 'Edit Feedback', 'edd-feedback' ); ?> - <a href="<?php echo admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ); ?>" class="add-new-h2"><?php _e( 'Go Back', 'edd-feedback' ); ?></a></h2>
+<h2><?php _e( 'Edit Feedback', 'edd-feedback' ); ?> - <a href="<?php echo admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions&section=edd-feedback-settings-section' ); ?>" class="add-new-h2"><?php _e( 'Go Back', 'edd-feedback' ); ?></a></h2>
 <form id="edd-feedback" action="" method="post">
 	<table class="form-table">
 		<tbody>

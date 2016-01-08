@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Feedback
  * Plugin URI:      https://foxland.fi/downloads/edd-feedback
  * Description:     Send feedback emails automatically after purchase. 
- * Version:         1.0.3
+ * Version:         1.0.4
  * Author:          Sami Keijonen
  * Author URI:      https://foxland.fi
  * Text Domain:     edd-feedback
@@ -73,7 +73,7 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 		private function setup_constants() {
 			
 			// Plugin version
-			define( 'EDD_FEEDBACK_VER', '1.0.3' );
+			define( 'EDD_FEEDBACK_VER', '1.0.4' );
 
 			// Plugin path
 			define( 'EDD_FEEDBACK_DIR', plugin_dir_path( __FILE__ ) );
@@ -134,6 +134,9 @@ if( !class_exists( 'EDD_Feedback' ) ) {
          */
 		private function hooks() {
             
+			// Register section for settings
+			add_filter( 'edd_settings_sections_extensions', array( $this, 'settings_sections' ) );
+			
 			// Register settings
 			add_filter( 'edd_settings_extensions', array( $this, 'settings' ), 1 );
 
@@ -141,6 +144,21 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 			if( class_exists( 'EDD_License' ) ) {
 				$license = new EDD_License( __FILE__, 'EDD Feedback', EDD_FEEDBACK_VER, 'Sami Keijonen', null, 'http://foxland.fi/' );
 			}
+		}
+		
+		/**
+		 * Add section for settings
+		 *
+		 * @access      public
+		 * @since       1.0.4
+		 * @param       array $sections The existing EDD sections array
+		 * @return      array The modified EDD sections array
+		 */
+		public function settings_sections( $sections ) {
+				
+			$sections['edd-feedback-settings-section'] = esc_html_x( 'EDD Feedback', 'section name in settings', 'edd-feedback' );
+			return $sections;
+				
 		}
 
 
@@ -180,6 +198,12 @@ if( !class_exists( 'EDD_Feedback' ) ) {
 					'type'        => 'hook'
 				)
 			);
+			
+			// If EDD is at version 2.5 or later use section for settings.
+			if ( version_compare( EDD_VERSION, 2.5, '>=' ) ) {
+				// Use the previously noted array key as an array key again and next your settings
+				$edd_feedback_settings = array( 'edd-feedback-settings-section' => $edd_feedback_settings );
+			}
 
 			return array_merge( $settings, $edd_feedback_settings );
 		}

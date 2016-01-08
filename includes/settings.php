@@ -117,7 +117,7 @@ Are you happy with your purchase? Is there anything we can do for you?';
 
 	update_option( 'edd_feedback_feedbacks', $feedbacks );
 
-	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
+	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions&section=edd-feedback-settings-section' ) ); exit;
 
 }
 add_action( 'edd_feedback_add_feedback', 'edd_feedback_process_add_feedback' );
@@ -171,7 +171,7 @@ Are you happy with your purchase? Is there anything we can do for you?';
 
 	update_option( 'edd_feedback_feedbacks', $feedbacks );
 
-	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
+	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions&section=edd-feedback-settings-section' ) ); exit;
 
 }
 add_action( 'edd_feedback_edit_feedback', 'edd_feedback_process_update_feedback' );
@@ -206,7 +206,7 @@ function edd_feedback_process_delete_feedback( $data ) {
 
 	update_option( 'edd_feedback_feedbacks', $feedbacks );
 
-	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions' ) ); exit;
+	wp_redirect( admin_url( 'edit.php?post_type=download&page=edd-settings&tab=extensions&section=edd-feedback-settings-section' ) ); exit;
 
 }
 add_action( 'edd_feedback_delete_feedback', 'edd_feedback_process_delete_feedback' );
