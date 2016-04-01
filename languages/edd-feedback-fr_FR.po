@@ -4,53 +4,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EDD Feedback 1.0.0\n"
 "Report-Msgid-Bugs-To: https://foxland.fi/contact/\n"
-"POT-Creation-Date: 2015-05-11 18:07+0100\n"
-"PO-Revision-Date: 2015-05-11 18:34+0100\n"
-"Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
+"POT-Creation-Date: 2016-04-01 09:06+0200\n"
+"PO-Revision-Date: 2016-04-01 09:09+0200\n"
+"Last-Translator: FX Bénard <fx@fxbenard.com>\n"
 "Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8beta2\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: edd-feedback.php:160
+#: edd-feedback.php:178
 msgid "EDD Feedback Settings"
-msgstr "Réglages d'EDD Feedback"
+msgstr "Réglages d’EDD Feedback"
 
-#: edd-feedback.php:161
+#: edd-feedback.php:179
 msgid "Configure EDD Feedback Settings"
-msgstr "Configuration des réglages d'EDD Feedback"
+msgstr "Configuration des réglages d’EDD Feedback"
 
-#: edd-feedback.php:166 includes/meta-boxes.php:23
+#: edd-feedback.php:184 includes/meta-boxes.php:23
 msgid "Disable Feedback Emails"
 msgstr "Désactiver les e-mails de feedback"
 
-#: edd-feedback.php:167
+#: edd-feedback.php:185
 msgid "Check this box if you do not want to send feedback emails."
-msgstr "Cochez cette case si vous ne voulez pas envoyer d'e-mails de feedback."
+msgstr "Cochez cette case si vous ne voulez pas envoyer d’e-mails de feedback."
 
-#: edd-feedback.php:172
+#: edd-feedback.php:190
 msgid "Hide on Checkout"
 msgstr "Cacher sur la page de commande"
 
-#: edd-feedback.php:173
+#: edd-feedback.php:191
 msgid ""
 "Check this box if you do not want to show \"Allow sending feedback email\" "
 "checkbox on the checkout page. This is useful when you are already asking "
 "users to join email list."
 msgstr ""
-"Cochez cette case si vous ne voulez pas afficher \"Permettre l&#39;envoi d'e-"
-"mail de feedback\" sur la page de commande. C'est utile lorsque vous "
-"demandez déjà aux utilisateurs de s'abonner à votre newsletter."
+"Cochez cette case si vous ne voulez pas afficher \"Permettre l’envoi d’e-"
+"mail de feedback\" sur la page de commande. C’est utile lorsque vous "
+"demandez déjà aux utilisateurs de s’abonner à votre newsletter."
 
-#: edd-feedback.php:178
+#: edd-feedback.php:196
 msgid "Feedbacks"
 msgstr "Feedbacks"
 
-#: edd-feedback.php:179
+#: edd-feedback.php:197
 msgid "Configure the feedback notice emails."
 msgstr "Configurez les e-mails de notification de feedback."
 
@@ -105,17 +105,17 @@ msgid "Go Back"
 msgstr "Retour"
 
 #: includes/add-feedback.php:27 includes/add-feedback.php:49
-#: includes/edit-feedback.php:33 includes/edit-feedback.php:42
+#: includes/edit-feedback.php:33
 msgid "Email Subject"
-msgstr "Sujet de l'e-mail"
+msgstr "Sujet de l’e-mail"
 
 #: includes/add-feedback.php:31 includes/edit-feedback.php:37
 msgid "The subject line of the feedback email"
-msgstr "Sujet de l'e-mail du feedback"
+msgstr "Sujet de l’e-mail du feedback"
 
-#: includes/add-feedback.php:36
+#: includes/add-feedback.php:36 includes/edit-feedback.php:42
 msgid "Email Period"
-msgstr "Moment de l'envoi"
+msgstr "Moment de l’envoi"
 
 #: includes/add-feedback.php:44 includes/edit-feedback.php:50
 msgid "When should this email be sent?"
@@ -126,7 +126,7 @@ msgid ""
 "The email message to be sent with the feedback. The following template tags "
 "can be used in the message:"
 msgstr ""
-"Le message de l'e-mail à envoyé avec le feedback. Les modèles de balises "
+"Le message de l’e-mail à envoyé avec le feedback. Les modèles de balises "
 "suivants peuvent être utilisés dans le message :"
 
 #: includes/add-feedback.php:55 includes/edit-feedback.php:61
@@ -135,12 +135,12 @@ msgstr "La liste de téléchargement"
 
 #: includes/class.extension-activation.php:85
 msgid "requires Easy Digital Downloads! Please activate it to continue!"
-msgstr "nécessite Easy Digital Downloads. Veuillez l'activer pour continuer !"
+msgstr "nécessite Easy Digital Downloads. Veuillez l’activer pour continuer !"
 
 #: includes/class.extension-activation.php:87
 msgid "requires Easy Digital Downloads! Please install it to continue!"
 msgstr ""
-"nécessite Easy Digital Downloads. Veuillez l'installer pour continuer !"
+"nécessite Easy Digital Downloads. Veuillez l’installer pour continuer !"
 
 #: includes/edit-feedback.php:27
 msgid "Edit Feedback"
@@ -148,7 +148,7 @@ msgstr "Modifier le feedback"
 
 #: includes/edit-feedback.php:55
 msgid "Email Message"
-msgstr "Message de l'e-mail"
+msgstr "Message de l’e-mail"
 
 #: includes/edit-feedback.php:72
 msgid "Update Feedback"
@@ -156,39 +156,39 @@ msgstr "Mettre à jour le feedback"
 
 #: includes/feedbacks.php:30
 msgid "One day after purchase"
-msgstr "Un jour après l&#39;achat"
+msgstr "Un jour après l’achat"
 
 #: includes/feedbacks.php:31
 msgid "Two days after purchase"
-msgstr "Deux jours après l&#39;achat"
+msgstr "Deux jours après l’achat"
 
 #: includes/feedbacks.php:32
 msgid "Three days after purchase"
-msgstr "Trois jours après l&#39;achat"
+msgstr "Trois jours après l’achat"
 
 #: includes/feedbacks.php:33
 msgid "One week after purchase"
-msgstr "Une semaine après l&#39;achat"
+msgstr "Une semaine après l’achat"
 
 #: includes/feedbacks.php:34 includes/feedbacks.php:35
 msgid "Two weeks after purchase"
-msgstr "Deux semaines après l&#39;achat"
+msgstr "Deux semaines après l’achat"
 
 #: includes/feedbacks.php:36
 msgid "One month after purchase"
-msgstr "Un mois après l&#39;achat"
+msgstr "Un mois après l’achat"
 
 #: includes/feedbacks.php:37
 msgid "Two months after purchase"
-msgstr "Deux mois après l&#39;achat"
+msgstr "Deux mois après l’achat"
 
 #: includes/feedbacks.php:38
 msgid "Three months after purchase"
-msgstr "Trois mois après l&#39;achat"
+msgstr "Trois mois après l’achat"
 
 #: includes/functions.php:77
 msgid "Allow sending feedback email."
-msgstr "Autoriser l'envoi de l'e-mail de feedback."
+msgstr "Autoriser l’envoi de l’e-mail de feedback."
 
 #: includes/functions.php:115
 msgid "none"
@@ -196,12 +196,12 @@ msgstr "aucun"
 
 #: includes/functions.php:119 includes/functions.php:121
 msgid "Send feedback email"
-msgstr "Envoyer l'e-mail de feedback"
+msgstr "Envoyer l’e-mail de feedback"
 
 #: includes/meta-boxes.php:48
 msgid "Check this if you want to disable feedback emails for this item."
 msgstr ""
-"Cochez cette case si vous ne voulez pas envoyer d'e-mails de feedback pour "
+"Cochez cette case si vous ne voulez pas envoyer d’e-mails de feedback pour "
 "ce produit."
 
 #: includes/settings.php:30
@@ -210,7 +210,7 @@ msgstr "Sujet"
 
 #: includes/settings.php:31
 msgid "Send Period"
-msgstr "Moment de l'envoi"
+msgstr "Moment de l’envoi"
 
 #: includes/settings.php:32
 msgid "Actions"
@@ -226,32 +226,32 @@ msgstr "Supprimer "
 
 #: includes/settings.php:89
 msgid "You do not have permission to add feedbacks"
-msgstr "Vous n&rsquo;avez pas l&rsquo;autorisation d'ajouter des feedbacks"
+msgstr "Vous n’avez pas l’autorisation d’ajouter des feedbacks"
 
-#: includes/settings.php:93 includes/settings.php:143
-#: includes/settings.php:197
+#: includes/settings.php:93 includes/settings.php:143 includes/settings.php:197
 msgid "Nonce verification failed"
 msgstr "Échec de la vérification nonce"
 
 #: includes/settings.php:139
 msgid "You do not have permission to update feedbacks"
-msgstr ""
-"Vous n&rsquo;avez pas l&rsquo;autorisation de mettre à jour des feedbacks"
+msgstr "Vous n’avez pas l’autorisation de mettre à jour des feedbacks"
 
 #: includes/settings.php:147 includes/settings.php:201
 msgid "No feedback ID was provided"
-msgstr "Aucune ID de feedback n'a été fournie"
+msgstr "Aucune ID de feedback n’a été fournie"
 
 #: includes/settings.php:193
 msgid "You do not have permission to delete feedbacks"
-msgstr "Vous n&rsquo;avez pas l&rsquo;autorisation de supprimer des feedbacks"
+msgstr "Vous n’avez pas l’autorisation de supprimer des feedbacks"
 
 #. Description of the plugin/theme
 msgid "Send feedback emails automatically after purchase."
-msgstr "Envoyer des emails de feedback automatiquement après l'achat."
+msgstr "Envoyer des emails de feedback automatiquement après l’achat."
 
-#~ msgid "EDD Feedback"
-#~ msgstr "EDD Feedback"
+#: edd-feedback.php:159
+msgctxt "section name in settings"
+msgid "EDD Feedback"
+msgstr "EDD Feedback"
 
 #~ msgid "https://foxland.fi/downloads/edd-feedback"
 #~ msgstr "https://foxland.fi/downloads/edd-feedback"
